@@ -9,7 +9,7 @@ const Auth0 = ({children}) => {
     domain="dev-3krhuctfc8ibmlph.us.auth0.com"
     clientId="LAx7Ev6QOcy4OWqLZuTjU2BETLo0q2FI"
     authorizationParams={{
-      redirect_uri:"https://my-music-5htkx5s6q-beyonxd.vercel.app/"
+      redirect_uri:"https://my-music-app-beyonxd.vercel.app/"
     }}
       >{children}</Auth0Provider>
   )
