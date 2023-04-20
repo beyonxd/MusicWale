@@ -2,26 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body{
+    background: rgb(119,106,94);
+ background: radial-gradient(circle, rgba(119,106,94,1) 0%, rgba(53,54,59,1) 100%, rgba(130,133,153,1) 100%);
+   
+    height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.font-lobster {
+    font-family: 'Lobster', cursive;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.Btn{
+    color: white;
+    border: 1px solid white;
+}
+
+
+.background-img {
+    z-index: -999;
+    mask-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    
 }
